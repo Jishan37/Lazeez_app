@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Menu | Lazeez</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/sidebar.css}">
+    <link rel="stylesheet" th:href="@{/css/custom.css}">
+</head>
+<body>
+    <div class="row">
+        <div class = "col-md-2 col-sm-2 col-lg-2" id="sidebar_div" th:insert="~{sidebar :: sidebar(currentUserName=${currentUserName})}"></div>
+        <div class="col-md-10" id="content_div">
+            <div class = ""  th:insert="~{navbar :: navbar}"></div>
+            <div class="row p-1 m-0">
+                <h2 class="justify-content-center d-flex text-white">Food Menu</h2>
+                <hr class="text-white">
+                <!--              Employee Registration  Form -->
+                <div th:if="${user_type}">
+                    <button type="button" class="btn py-2 mx-2 btn-warning col-md-3" data-bs-toggle="modal" data-bs-target="#addFoodModel">Add New Food</button>
+                    <h6 class="bg-success justify-content-center d-flex text-white p-2 mt-2" th:if="${success}" th:text="${success}"></h6>
+                    <hr class="text-white">
+                </div>
+            </div>
+<!--            Food Menu Report-->
+            <div class="row p-2 m-0 ">
+                <table class="table table-hover table-striped table-bordered dataTable no-footer">
+                    <thead class="bg-primary text-center">
+                    <tr role="row">
+                        <th class="align-middle">SL#</th>
+                        <th class="align-middle">Food Name</th>
+                        <th class="align-middle">Price</th>
+                        <th class="align-middle">Description</th>
+                        <th class="align-middle">Status</th>
+                        <th class="align-middle">Image</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="row" th:each="food, i : ${foodMenuList}">
+                        <th scope="row" th:text="${i.count}"></th>
+                        <td th:text="${food.name}"></td>
+                        <td th:text="${food.price}"></td>
+                        <td th:text="${food.description}"></td>
+                        <td>
+                            <span th:if="${food.status == 1}">Active</span>
+                            <span th:if="${food.status == 0}">Inactive</span>
+                        </td>
+                        <td th:if="${food.imagePath}">
+                            <button class="img-btn"
+                                    th:attr="data-img-src=${food.imagePath}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                <img th:src="${food.imagePath}" class="card-img-top" width="100%" height="50px" th:alt="${food.name}">
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg-700 modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fw-bold fs-5" id="imageModalLabel">Food Photo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="" id="imageModalId" class="image-fluid w-100" alt="Invoice">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Food Modal -->
+    <div class="modal fade" id="addFoodModel" tabindex="-1" aria-labelledby="addFoodRegModelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addFoodRegModelLabel">Add Food Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-3">
+                    <form class="row g-3" action= "/add-food" enctype="multipart/form-data" csrf method ="POST" th:object="${food}">
+                        <div class="col-md-6 px-2">
+                            <label for="name" class="form-label">Food Name</label>
+                            <span class="text-danger">*</span>
+                            <input type="text" name="name" class="form-control" required id="name">
+                        </div>
+                        <div class="col-md-6 px-2">
+                            <label for="price" class="form-label">Price</label>
+                            <span class="text-danger">*</span>
+                            <input type="number" name="price" class="form-control" required id="price">
+                        </div>
+                        <div class="col-md-6 px-2">
+                            <label for="image" class="form-label">Image</label>
+                            <span class="text-danger">*</span>
+                            <input type="file" accept="image/*" name="image" class="form-control" required id="image">
+                        </div>
+                        <div class="col-md-6 px-2">
+                            <label for="description" class="form-label">Description</label>
+                            <span class="text-danger">*</span>
+                            <textarea type="text" name="description" rows="1" class="form-control" required id="description"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script type="text/javascript" th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <!-- Popper.JS -->
+    <script type="text/javascript"  th:src="@{/js/popper.min.js}"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".img-btn").click(function() {
+                const src = $(this).data("img-src");
+                document.getElementById("imageModalId").src = src;
+                console.log(src);
+            });
+        });
+        //Active Menu
+       document.getElementById('food-menu').classList.add('active');
+
+        $(document).ready(function() {
+            $(".details-button").click(function() {
+                const employeeId = $(this).data("employee-id");
+                console.log(employeeId);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -16,19 +16,20 @@
 
 <body>
 
-    <div class="h-100 min-vh-100 sidebar-header" id="sidebar" th:fragment="sidebar">
+    <div class="h-100 min-vh-100 border-end border-warning sidebar-header" id="sidebar" th:fragment="sidebar">
         <!-- Sidebar Holder -->
         <nav >
             <div class="p-2">
-                <h5>Car Management System</h5>
+                <img class="rounded mx-auto d-block" th:src="@{photos/logo.jpeg}" alt="Lazeez" height="70px">
+                <h5 class="d-flex justify-content-center">Lazeez</h5>
                 <hr>
-                <h6 th:text="${currentUserName}"></h6>
+                <h6 th:text="${currentUserName}" class="d-flex justify-content-center"></h6>
                 <hr>
             </div>
             <div class="mt-2 sidebar-inner px-2 pt-1 nav-item">
                 <ul class="nav nav-pills flex-column pt-1 pt-md-0">
                     <li class="nav-item my-1">
-                        <a href="/" id="dashboard" class="nav-link text-white fs-700">
+                        <a href="/dashboard" id="dashboard" class="nav-link text-white fs-700">
                             <span class="px-1">Dashboard</span>
                         </a>
                     </li>
@@ -38,33 +39,13 @@
                         </a>
                     </li>
                     <li class="nav-item my-1">
-                        <a href="/car" id="car-registration" class="nav-link text-white fs-700">
-                            <span class="px-1">Car</span>
+                        <a href="/order" id="order" class="nav-link text-white fs-700">
+                            <span class="px-1">Order</span>
                         </a>
                     </li>
                     <li class="nav-item my-1">
-                        <a href="/car-request" id="car-request" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Request</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car-schedule" id="car-schedule" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Schedule</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/car-expense" id="car-expense" class="nav-link text-white fs-700">
-                            <span class="px-1">Car Expense</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/expense-payment" id="expense-payment" class="nav-link text-white fs-700">
-                            <span class="px-1">Expense Payment</span>
-                        </a>
-                    </li>
-                    <li class="nav-item my-1">
-                        <a href="/duty-payment" id="duty-payment" class="nav-link text-white fs-700">
-                            <span class="px-1">Duty Payment</span>
+                        <a href="/food-menu" id="food-menu" class="nav-link text-white fs-700">
+                            <span class="px-1">Food Menu</span>
                         </a>
                     </li>
                 </ul>

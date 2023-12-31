@@ -1,8 +1,8 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700";
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     background: #cfe9ff;
 }
@@ -12,7 +12,7 @@ body {
     padding: 100px;
 }
 .bg-base{
-    background-color: #0e2c46;
+    background-color: #000000;
 }
 
 p {
@@ -38,7 +38,7 @@ a:hover{
 }
 .navbar {
     padding: 15px 10px;
-    background: #1a3763;
+    background: #000000;
     border: none;
     border-radius: 0;
     margin-bottom: 10px;
@@ -69,8 +69,262 @@ a:hover{
     border-radius: 0.75rem;
 }
 .dashboard-bg{
-    background-color: #020b1a;
+    background-color: #FE4F00;
 }
 .dashboard-card-min-height-100{
     min-height: 150px;
+}
+
+/*Front End*/
+body {
+    background-color: #000000;
+    /* background-color: #292121; Dark Black */
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+}
+::selection{
+    background-color: #FE4F00;
+    color: #FFF;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+.float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+a{
+    color: #FFF;
+}
+a:hover{
+    font-weight: 700;
+    transition: 0.3s;
+}
+.header-background {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(rgba(102, 195, 55, 1), rgba(255, 229, 0, 1));
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.menu-font {
+    font-size: 14px;
+}
+
+.nav-link-2 {
+    display: block;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.nav-link-2:hover {
+    color: #eae60b;
+    font-weight: 700;
+}
+
+.nav-link-2:active {
+    color: #eae60b;
+    font-weight: 700;
+}
+
+.active {
+    color: #eae60b   !important;
+    font-weight: 700;
+
+}
+
+.bg-black {
+    background-color: black;
+}
+a:hover{
+    color: #eae60b;
+}
+.cart:hover{
+    font-weight: 600;
+    font-size: 19px;
+}
+p.mh-120{
+    min-height: 120px;
+}
+.title{
+    color: #FE4F00;
+}
+.bg-secondary{
+    background-color: #FE4F00;
+}
+.title::selection{
+    background-color: #eae60b;
+    color: #000;
+}
+.shadow-red{
+    box-shadow:1px 1px 10px 0px #ff7b00, -1px -1px 10px 0px #ff1900 ;
+}
+
+/* Lazeez 2 */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    background-color: black;
+    /* background-color: #292121; Dark Black */
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+}
+::selection{
+    background-color: #c93e00;
+    color: #FFF;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+.float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+a{
+    color: #FFF;
+}
+a:hover{
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+
+
+.header-background {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(rgba(102, 195, 55, 1), rgba(255, 229, 0, 1));
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.menu-font {
+    font-size: 14px;
+}
+
+.nav-link-2 {
+    display: block;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.nav-link-2:hover {
+    color: #eae60b;
+    font-weight: 700;
+}
+
+.nav-link-2:active {
+    color: #eae60b;
+    font-weight: 700;
+}
+
+.active {
+    color: #eae60b   !important;
+    font-weight: 700;
+
+}
+
+.bg-black {
+    background-color: black;
+}
+a:hover{
+    color: #eae60b;
+}
+.cart:hover{
+    font-weight: 600;
+    font-size: 19px;
+}
+p.mh-120{
+    min-height: 120px;
+}
+.title{
+    color: #FE4F00;
+}
+.title::selection{
+    background-color: #eae60b;
+    color: #000;
+}
+.shadow-red{
+    box-shadow:1px 1px 10px 0px #ff7b00, -1px -1px 10px 0px #ff1900 ;
+}
+
+
+
+/* Blog Page */
+
+marquee{
+    background-color: #FE4F00;
+    color: #FFF;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+}
+
+/*  About  */
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-head p{
+    color: white;
+}
+
+#about-head h2{
+    color: white;
+}
+
+#about-head abbr{
+    color: yellow;
 }
