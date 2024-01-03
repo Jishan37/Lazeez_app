@@ -16,8 +16,8 @@ public class NavController {
 
 
     @GetMapping("/team")
-    public String team(Model model){
-        if (CommonUtils.isAdminAuthenticate){
+    public String team(Model model) {
+        if (CommonUtils.isAdminAuthenticate) {
             model.addAttribute("currentUserName", CommonUtils.employee.getName());
             return "team.html";
         } else {

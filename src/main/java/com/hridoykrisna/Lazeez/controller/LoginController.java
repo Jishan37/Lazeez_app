@@ -16,15 +16,16 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequestMapping("")
 public class LoginController {
     private final LoginService loginService;
+
     @GetMapping({"/login", "login/"})
-    public String login(){
+    public String login() {
         return "login.html";
     }
 
     @PostMapping("/login-form")
-    public String loginForm(@Valid @ModelAttribute("login") Employee employee, Model model, RedirectAttributes redirectAttributes){
+    public String loginForm(@Valid @ModelAttribute("login") Employee employee, Model model, RedirectAttributes redirectAttributes) {
         int result = loginService.makeLogin(employee);
-        if (result==1){
+        if (result == 1) {
             return "redirect:/dashboard";
         } else {
             redirectAttributes.addFlashAttribute("failed", "Wrong Credentials, Please Enter valid Value");
@@ -33,8 +34,8 @@ public class LoginController {
     }
 
     @GetMapping("/logout")
-    public String logout(){
-        if (CommonUtils.isAdminAuthenticate){
+    public String logout() {
+        if (CommonUtils.isAdminAuthenticate) {
             CommonUtils.employee = null;
             CommonUtils.isAdminAuthenticate = false;
         }

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @GetMapping
-    public String getHome(Model model){
+    public String getHome(Model model) {
         model.addAttribute("userAuthentic", CommonUtils.isUserAuthenticate);
         return "frontend/home.html";
     }

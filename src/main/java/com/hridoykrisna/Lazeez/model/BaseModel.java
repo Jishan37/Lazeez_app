@@ -1,9 +1,7 @@
 package com.hridoykrisna.Lazeez.model;
 
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.ToString;
 
 import java.util.Date;

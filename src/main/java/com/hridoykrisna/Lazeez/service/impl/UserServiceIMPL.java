@@ -1,7 +1,6 @@
 package com.hridoykrisna.Lazeez.service.impl;
 
 import com.hridoykrisna.Lazeez.Utils.CommonUtils;
-import com.hridoykrisna.Lazeez.model.Employee;
 import com.hridoykrisna.Lazeez.model.User;
 import com.hridoykrisna.Lazeez.repository.UserRepo;
 import com.hridoykrisna.Lazeez.service.UserService;
@@ -12,7 +11,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceIMPL  implements UserService{
+public class UserServiceIMPL implements UserService {
     private final UserRepo userRepo;
 
     @Override
@@ -24,10 +23,9 @@ public class UserServiceIMPL  implements UserService{
     @Override
     public int makeLogin(User user) {
         Optional<User> data = userRepo.findByEmailAndPassword(user.getEmail(), user.getPassword());
-        if (data.isPresent()){
+        if (data.isPresent()) {
             CommonUtils.isUserAuthenticate = true;
             CommonUtils.user = data.get();
-//            System.out.println(data.get());
             return 1;
         } else {
             return 0;

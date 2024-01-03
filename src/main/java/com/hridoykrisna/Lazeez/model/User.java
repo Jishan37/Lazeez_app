@@ -13,7 +13,7 @@ import java.security.NoSuchAlgorithmException;
 @AllArgsConstructor
 @Data
 @ToString
-public class User extends BaseModel{
+public class User extends BaseModel {
     private String name;
     @Column(unique = true)
     private String email;
@@ -25,8 +25,7 @@ public class User extends BaseModel{
 
     public void setPassword(String password) {
         String generatedPassword = null;
-        try
-        {
+        try {
             // Create MessageDigest instance for MD5
             MessageDigest md = MessageDigest.getInstance("MD5");
 

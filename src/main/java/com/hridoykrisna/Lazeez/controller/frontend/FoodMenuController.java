@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("")
 public class FoodMenuController {
     private final FoodMenuService foodMenuService;
+
     @GetMapping("/menu")
-    public String getFoodMenu(Model model){
+    public String getFoodMenu(Model model) {
         model.addAttribute("userAuthentic", CommonUtils.isUserAuthenticate);
         model.addAttribute("foodMenuList", foodMenuService.getFoodMenuList());
         return "frontend/menu.html";

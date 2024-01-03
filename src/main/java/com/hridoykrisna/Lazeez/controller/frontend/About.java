@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class About {
 
     @GetMapping("about")
-    public String getAbout(Model model){
+    public String getAbout(Model model) {
         model.addAttribute("userAuthentic", CommonUtils.isUserAuthenticate);
-        System.out.println("User: "+CommonUtils.isUserAuthenticate);
+        System.out.println("User: " + CommonUtils.isUserAuthenticate);
         return "frontend/about.html";
     }
 }

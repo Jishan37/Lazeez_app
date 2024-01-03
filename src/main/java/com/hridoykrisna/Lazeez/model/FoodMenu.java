@@ -9,12 +9,11 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 @ToString
-public class FoodMenu extends BaseModel{
+public class FoodMenu extends BaseModel {
     private String name;
     private String description;
-    private String price;
+    private float price;
     private int total_order;
     private String imagePath;
     private int status;
-
 }

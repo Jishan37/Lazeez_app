@@ -13,7 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.List;
+import java.util.Objects;
 
 @Controller
 @ControllerAdvice
@@ -24,24 +25,26 @@ public class EmployeeController {
     private final FileService fileService;
 
     private final String path = CommonUtils.ImagePath;
+
     @GetMapping({"/employee", "/employee/"})
-    public String employee(Model map){
-        if (CommonUtils.isAdminAuthenticate){
+    public String employee(Model map) {
+        if (CommonUtils.isAdminAuthenticate) {
             List<Employee> employeeList = null;
             employeeList = employeeService.employeeList();
             map.addAttribute("employees", employeeList);
             map.addAttribute("currentUserName", CommonUtils.employee.getName());
 
-            if (Objects.equals(CommonUtils.employee.getUser_type(), "ADMIN")){
+            if (Objects.equals(CommonUtils.employee.getUser_type(), "ADMIN")) {
                 map.addAttribute("user_type", "ADMIN");
             }
             return "employee.html";
-        }else {
+        } else {
             return "redirect:/login";
         }
     }
+
     @PostMapping("/employee-registration-form")
-    public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, @RequestParam MultipartFile image,  RedirectAttributes redirectAttributes) throws IOException {
+    public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, @RequestParam MultipartFile image, RedirectAttributes redirectAttributes) throws IOException {
 
 
         // Save Image & Set Image Path

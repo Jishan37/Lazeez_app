@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LazeezManagementApplication {
 
 
-	public static void main(String[] args) {
-		SpringApplication.run(LazeezManagementApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LazeezManagementApplication.class, args);
+    }
 
 }

@@ -23,17 +23,18 @@ public class FoodController {
     private final FoodMenuService foodMenuService;
     private final FileService fileService;
     private final String path = CommonUtils.ImagePath;
+
     @GetMapping({"/food-menu", "/food-menu/"})
-    public String employee(Model map){
-        if (CommonUtils.isAdminAuthenticate){
+    public String employee(Model map) {
+        if (CommonUtils.isAdminAuthenticate) {
 
             map.addAttribute("currentUserName", CommonUtils.employee.getName());
             map.addAttribute("foodMenuList", foodMenuService.getFoodMenuList());
-            if (Objects.equals(CommonUtils.employee.getUser_type(), "ADMIN")){
+            if (Objects.equals(CommonUtils.employee.getUser_type(), "ADMIN")) {
                 map.addAttribute("user_type", "ADMIN");
             }
             return "food_menu.html";
-        }else {
+        } else {
             return "redirect:/login";
         }
     }

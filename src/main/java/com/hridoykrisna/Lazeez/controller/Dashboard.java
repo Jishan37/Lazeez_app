@@ -17,14 +17,14 @@ public class Dashboard {
     private final EmployeeRepo employeeRepo;
 
     @GetMapping
-    public String dashboard(Model model){
-        if (CommonUtils.isAdminAuthenticate){
+    public String dashboard(Model model) {
+        if (CommonUtils.isAdminAuthenticate) {
             model.addAttribute("currentUserName", CommonUtils.employee.getName());
             long totalEmp = employeeRepo.count();
             int totalDriver = employeeRepo.getTotalDriver("DRIVER");
             model.addAttribute("totalEmployee", totalEmp);
             model.addAttribute("totalDriver", totalDriver);
-            model.addAttribute("totalOfficer", totalEmp-totalDriver);
+            model.addAttribute("totalOfficer", totalEmp - totalDriver);
             return "dashboard.html";
         } else {
             return "redirect:login";

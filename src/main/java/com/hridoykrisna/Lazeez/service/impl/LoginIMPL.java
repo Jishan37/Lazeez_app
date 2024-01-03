@@ -13,10 +13,11 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class LoginIMPL implements LoginService {
     private final EmployeeRepo employeeRepo;
+
     @Override
     public int makeLogin(Employee employee) {
         Optional<Employee> data = employeeRepo.findByEmailAndPassword(employee.getEmail(), employee.getPassword());
-        if (data.isPresent()){
+        if (data.isPresent()) {
             CommonUtils.isAdminAuthenticate = true;
             CommonUtils.employee = data.get();
 //            System.out.println(data.get());
