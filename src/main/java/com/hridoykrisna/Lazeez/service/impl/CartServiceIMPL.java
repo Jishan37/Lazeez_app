@@ -7,8 +7,11 @@ import com.hridoykrisna.Lazeez.repository.CartRepo;
 import com.hridoykrisna.Lazeez.repository.FoodMenuRepo;
 import com.hridoykrisna.Lazeez.service.CartService;
 import lombok.RequiredArgsConstructor;
+
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -19,6 +22,7 @@ public class CartServiceIMPL implements CartService {
     @Override
     public List<CartItem> addToCart(int id) {
         Optional<FoodMenu> foodMenu = foodMenuRepo.findById(id);
+        List<CartItem> cartItems = new ArrayList<>();
         if (foodMenu.isPresent()){
             CartItem cartItem = new CartItem();
             cartItem.setFood_id(id);
@@ -29,16 +33,16 @@ public class CartServiceIMPL implements CartService {
             cartItem.setStatus(1);
             cartItem.setQuantity(1);
             cartItem.setTotal_price(foodMenu.get().getPrice());
-            cartItem.setCreatedBy(CommonUtils.user.getId());
+            cartItem.setCreatedBy(CommonUtils.customer.getId());
 
-            List<CartItem> cartItems = cartRepo.getCartListAndStatusOne(CommonUtils.user.getId()); // Get all at once
+            cartItems = cartRepo.getCartListAndStatusOne(CommonUtils.customer.getId()); // Get all at once
 
             Optional<CartItem> existingItem = cartItems.stream()
                     .filter(item -> item.getFood_id() == id)
                     .findFirst();
 
             if (existingItem.isPresent()) {
-                existingItem.get().setUpdateBy(CommonUtils.user.getId());
+                existingItem.get().setUpdateBy(CommonUtils.customer.getId());
                 existingItem.get().setQuantity(existingItem.get().getQuantity() + 1);
                 existingItem.get().setTotal_price(existingItem.get().getTotal_price() + cartItem.getUnit_price());
                 cartRepo.save(existingItem.get());
@@ -47,6 +51,13 @@ public class CartServiceIMPL implements CartService {
                 cartRepo.save(cartItem);
             }
         }
-        return cartRepo.getCartListAndStatusOne(CommonUtils.user.getId());
+        return cartRepo.getCartListAndStatusOne(CommonUtils.customer.getId());
+    }
+
+    @Override
+    public List<CartItem> removeFromCart(int id) {
+        Optional<CartItem> cartItemOptionals = cartRepo.findById(id);
+        cartItemOptionals.ifPresent(cartRepo::delete);
+        return cartRepo.getCartListAndStatusOne(CommonUtils.customer.getId());
     }
 }

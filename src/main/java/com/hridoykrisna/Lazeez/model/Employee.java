@@ -1,6 +1,7 @@
 package com.hridoykrisna.Lazeez.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
 
 import java.security.MessageDigest;
@@ -13,6 +14,7 @@ import java.security.NoSuchAlgorithmException;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Table(name = "employee")
 public class Employee extends BaseModel {
 
     private String name;

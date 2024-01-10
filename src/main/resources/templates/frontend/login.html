@@ -43,7 +43,7 @@
 <!--                        </a>-->
 <!--                    </li>-->
                     <li class="nav-item" th:unless="${userAuthentic}">
-                        <a aria-current="page" class="nav-link-2 active" href="/login-user">Login</a>
+                        <a aria-current="page" class="nav-link-2 active" href="/login-customer">Login</a>
                     </li>
                     <li class="nav-item" th:unless="${userAuthentic}">
                         <a class="nav-link-2" href="/signup">Signup</a>
@@ -63,7 +63,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4 rounded-4 shadow-red">
             <div class="justify-content-center d-flex py-5 px-3">
-                <form action="/user-login-form" class="row g-3 px-3" method="post" th:object="${login}">
+                <form action="/customer-login-form" class="row g-3 px-3" method="post" th:object="${login}">
                     <h5 class="fw-bold fs-4 title text-center">Login</h5>
                     <div class="col-md-12">
                         <label class="form-label" for="inputEmail4">Email</label>
@@ -136,7 +136,7 @@
     </div>
     <div class="row p-0 m-0 bg-black text-white mt-auto">
         <div class="p-1 px-3">
-        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2023
+        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2024
           | Lazeez | All Rights Reserved.</span>
         </div>
     </div>

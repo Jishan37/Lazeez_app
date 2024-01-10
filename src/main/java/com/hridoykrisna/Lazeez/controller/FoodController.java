@@ -28,8 +28,8 @@ public class FoodController {
     public String employee(Model map) {
         if (CommonUtils.isAdminAuthenticate) {
 
-            map.addAttribute("currentUserName", CommonUtils.employee.getName());
             map.addAttribute("foodMenuList", foodMenuService.getFoodMenuList());
+            map.addAttribute("currentUserName", CommonUtils.employee.getName());
             if (Objects.equals(CommonUtils.employee.getUser_type(), "ADMIN")) {
                 map.addAttribute("user_type", "ADMIN");
             }

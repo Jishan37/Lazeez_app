@@ -1,9 +1,9 @@
 package com.hridoykrisna.Lazeez.service;
 
-import com.hridoykrisna.Lazeez.model.User;
+import com.hridoykrisna.Lazeez.model.Customer;
 
 public interface UserService {
-    void saveUser(User user);
+    void saveUser(Customer customer);
 
-    int makeLogin(User user);
+    int makeLogin(Customer customer);
 }

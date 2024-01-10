@@ -2,6 +2,7 @@ package com.hridoykrisna.Lazeez.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
 
 import java.security.MessageDigest;
@@ -13,15 +14,20 @@ import java.security.NoSuchAlgorithmException;
 @AllArgsConstructor
 @Data
 @ToString
-public class User extends BaseModel {
+@Table(name = "customer")
+public class Customer extends BaseModel {
     private String name;
-    @Column(unique = true)
+//    @Column(unique = true)
     private String email;
     private String password;
     private String address;
     private String city;
     private String zip_code;
     private long total_order;
+
+    public Customer(int id) {
+        this.id = id;
+    }
 
     public void setPassword(String password) {
         String generatedPassword = null;

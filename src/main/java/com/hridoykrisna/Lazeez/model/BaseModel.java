@@ -12,7 +12,7 @@ import java.util.Date;
 public abstract class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    public int id;
     @Column(updatable = false)
     private int createdBy;
     @Column(updatable = false)

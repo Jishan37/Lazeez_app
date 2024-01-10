@@ -44,7 +44,7 @@
                         </div>
                     </li>
                     <li class="nav-item" th:unless="${userAuthentic}">
-                        <a class="nav-link-2" href="/login-user">Login</a>
+                        <a class="nav-link-2" href="/login-customer">Login</a>
                     </li>
                     <li class="nav-item" th:unless="${userAuthentic}">
                         <a class="nav-link-2" href="/signup">Signup</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link-2" href="/my-account">My Account</a>
                     </li>
                     <li class="nav-item" th:if="${userAuthentic}">
-                        <a class="nav-link-2" href="/user-logout">Log Out</a>
+                        <a class="nav-link-2" href="/customer-logout">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -238,7 +238,7 @@
     </div>
     <div class="row p-0 m-0 bg-black text-white mt-auto">
         <div class="p-1 px-3">
-        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2023
+        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2024
           | Lazeez | All Rights Reserved.</span>
         </div>
     </div>
@@ -280,7 +280,10 @@
                     </div>
                 </div>
             </div>
-
+            <div class="modal-footer">
+                <h6 class="text-danger fw-bold" id="total-order-id"></h6>
+                <button class="btn btn-warning" onclick="submitOrder()">Order Now</button>
+            </div>
         </div>
     </div>
 </div>
@@ -292,27 +295,33 @@
 <script th:src="@{/js/bootstrap.bundle.min.js}" type="text/javascript"></script>
 
 <script>
-    let cartList = null;
-    function renderCartItem(cartList){
+    window.cartList = null;
+    window.totalOrderPrice = 0;
+
+    function renderCartItem(cartList) {
         const table = document.getElementById("table-id");
         cartList.forEach((item, index) => {
             let element = `<tr role="row" id="table-row-id">
-                                <th scope="row">${index+1}</th>
+                                <th class="text-center" scope="row">${index + 1}</th>
                                 <td>
                                     <img class="card-img-top" height="50px" src="${item.imagePath}"
                                          width="100%">
                                 </td>
-                                <td>${item.name}</td>
-                                <td>${item.quantity}</td>
-                                <td>${item.total_price}</td>
-                                <td>${item.total_price}</td>
-
+                                <td class="text-center">${item.name}</td>
+                                <td class="text-center">${item.quantity}</td>
+                                <td class="text-center">${item.total_price}</td>
+                                <td class="text-center">
+                                    <button onclick="removeFunc(${item.id})" class="btn btn-danger">Remove</button>
+                                </td>
                             </tr>`
 
             table.insertAdjacentHTML("beforeend", element);
+            totalOrderPrice = totalOrderPrice + item.total_price;
 
         });
+        document.getElementById("total-order-id").innerHTML = "Total Order Price= "+ totalOrderPrice + " BDT Only.";
     }
+
     $.ajax({
         type: "GET",
         url: "/api/cart/list",
@@ -321,9 +330,34 @@
             cartList = list;
             document.getElementById("cartItem").innerText = list.length;
             renderCartItem(cartList);
-            console.log(list);
         }
     });
+
+    function removeFunc(cart_id) {
+        console.log(cart_id);
+        $.ajax({
+            type: "GET",
+            url: "/api/cart/remove/" + cartList,
+            dataType: "json", // Specify JSON data type
+            success: function (list) {
+                console.log(list);
+            }
+        });
+    }
+
+    function submitOrder(){
+        $.ajax({
+            type: "GET",
+            url: "/api/order/make-order",
+            dataType: "json", // Specify JSON data type
+            success: function (list) {
+                console.log(list);
+                window.location.reload();
+                window.location.href = "/my-account";
+            }
+        });
+    }
+
 
     let width = window.screen.width;
     console.log("Width: " + width);

@@ -28,7 +28,7 @@
         </div>
         <!--            Food Menu Report-->
         <div class="row p-2 m-0 ">
-            <table class="table table-hover table-striped table-bordered dataTable no-footer">
+            <table class="table table-hover table-black table-bordered dataTable no-footer">
                 <thead class="bg-primary text-center">
                 <tr role="row">
                     <th class="align-middle">SL#</th>
@@ -42,10 +42,10 @@
                 <tbody>
                 <tr role="row" th:each="food, i : ${foodMenuList}">
                     <th scope="row" th:text="${i.count}"></th>
-                    <td th:text="${food.name}"></td>
-                    <td th:text="${food.price}"></td>
-                    <td th:text="${food.description}"></td>
-                    <td>
+                    <td class="text-center" th:text="${food.name}"></td>
+                    <td class="text-center" th:text="${food.price}"></td>
+                    <td class="text-center" th:text="${food.description}"></td>
+                    <td class="text-center">
                         <span th:if="${food.status == 1}">Active</span>
                         <span th:if="${food.status == 0}">Inactive</span>
                     </td>

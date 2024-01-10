@@ -38,7 +38,7 @@
                 <ul class="navbar-nav m-auto bg-radius-shape mb-2 mb-lg-0 justify-content-center fw-semibold">
 
                     <li class="nav-item" th:unless="${userAuthentic}">
-                        <a class="nav-link-2" href="/login-user">Login</a>
+                        <a class="nav-link-2" href="/login-customer">Login</a>
                     </li>
                     <li class="nav-item" th:unless="${userAuthentic}">
                         <a aria-current="page" class="nav-link-2 active" href="/signup">Signup</a>
@@ -58,7 +58,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4 rounded-4 shadow-red">
             <div class="justify-content-center d-flex py-5 px-3">
-                <form action="/signup-form" class="row g-3 px-3" method="post" th:object="${user}">
+                <form action="/signup-form" class="row g-3 px-3" method="post" th:object="${customer}">
                     <h5 class="fw-bold fs-4 title text-center">Signup</h5>
                     <div class="col-md-12">
                         <label class="form-label" for="name">Name</label>
@@ -91,7 +91,7 @@
                     <div class="col-md-12">
                         <button class="btn btn-warning w-100" type="submit">Register</button>
                     </div>
-                    <a class="fw-bold text-decoration-none text-center fs-7" href="/login-user">Already Member!
+                    <a class="fw-bold text-decoration-none text-center fs-7" href="/login-customer">Already Member!
                         Login..</a>
                 </form>
             </div>
@@ -148,7 +148,7 @@
     </div>
     <div class="row p-0 m-0 bg-black text-white mt-auto">
         <div class="p-1 px-3">
-        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2023
+        <span class="d-flex text-center fw-bold justify-content-center bottom-footer-float-start">Copyright &copy; 2024
           | Lazeez | All Rights Reserved.</span>
         </div>
     </div>

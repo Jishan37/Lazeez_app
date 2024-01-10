@@ -10,10 +10,12 @@ import lombok.*;
 @Data
 @ToString
 public class FoodMenu extends BaseModel {
+
     private String name;
     private String description;
     private float price;
     private int total_order;
     private String imagePath;
     private int status;
+
 }

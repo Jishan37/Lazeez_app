@@ -1,7 +1,7 @@
 package com.hridoykrisna.Lazeez.Utils;
 
 import com.hridoykrisna.Lazeez.model.Employee;
-import com.hridoykrisna.Lazeez.model.User;
+import com.hridoykrisna.Lazeez.model.Customer;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -11,7 +11,7 @@ public class CommonUtils {
     public static String ImagePath = "images/";
     public static Boolean isAdminAuthenticate = false;
     public static Boolean isUserAuthenticate = false;
-    public static User user;
+    public static Customer customer;
     public static Employee employee;
     public static List<Employee> driverList;
 

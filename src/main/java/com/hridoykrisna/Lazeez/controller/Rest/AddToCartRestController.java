@@ -30,9 +30,15 @@ public class AddToCartRestController {
     public List<CartItem> ListSize() {
         int userId = 0;
         if (CommonUtils.isUserAuthenticate) {
-            userId = CommonUtils.user.getId();
+            userId = CommonUtils.customer.getId();
         }
         return cartRepo.getCartListAndStatusOne(userId);
 
     }
+
+    @GetMapping("remove/{id}")
+    public List<CartItem> removeCartItem(@Valid @PathVariable("id") int id) {
+        return cartService.removeFromCart(id);
+    }
+
 }

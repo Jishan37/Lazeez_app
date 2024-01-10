@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface CartService {
     List<CartItem> addToCart(int id);
+    List<CartItem> removeFromCart(int id);
 }
