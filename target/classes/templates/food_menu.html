@@ -32,23 +32,17 @@
                 <thead class="bg-primary text-center">
                 <tr role="row">
                     <th class="align-middle">SL#</th>
+                    <th class="align-middle">Image</th>
                     <th class="align-middle">Food Name</th>
                     <th class="align-middle">Price</th>
                     <th class="align-middle">Description</th>
                     <th class="align-middle">Status</th>
-                    <th class="align-middle">Image</th>
+                    <th class="align-middle">Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr role="row" th:each="food, i : ${foodMenuList}">
                     <th scope="row" th:text="${i.count}"></th>
-                    <td class="text-center" th:text="${food.name}"></td>
-                    <td class="text-center" th:text="${food.price}"></td>
-                    <td class="text-center" th:text="${food.description}"></td>
-                    <td class="text-center">
-                        <span th:if="${food.status == 1}">Active</span>
-                        <span th:if="${food.status == 0}">Inactive</span>
-                    </td>
                     <td th:if="${food.imagePath}">
                         <button class="img-btn"
                                 data-bs-target="#imageModal" data-bs-toggle="modal"
@@ -56,6 +50,17 @@
                             <img class="card-img-top" height="50px" th:alt="${food.name}" th:src="${food.imagePath}"
                                  width="100%">
                         </button>
+                    </td>
+                    <td class="text-center" th:text="${food.name}"></td>
+                    <td class="text-center" th:text="${food.price}"></td>
+                    <td class="text-center" th:text="${food.description}"></td>
+                    <td class="text-center">
+                        <span th:if="${food.status == 1}">Active</span>
+                        <span th:if="${food.status == 0}">Inactive</span>
+                    </td>
+                    <td class="text-center">
+                        <button class="btn btn-warning status-btn" th:onclick="'foodStatus(' + ${food.id} + ', 0)'" th:if="${food.status == 1}">Close</button>
+                        <button class="btn btn-success status-btn" th:onclick="'foodStatus(' + ${food.id} + ', 1)'" th:if="${food.status == 0}">Open</button>
                     </td>
                 </tr>
                 </tbody>
@@ -133,6 +138,21 @@
 <script th:src="@{/js/bootstrap.bundle.min.js}" type="text/javascript"></script>
 
 <script type="text/javascript">
+<!--    Food Status Change-->
+
+    function foodStatus(food_id, status){
+            $.ajax({
+                type: "GET",
+                url: "/api/food-menu/status/" + food_id +"/"+ status,
+                dataType: "json", // Specify JSON data type
+                success: function (response) {
+                    window.location.reload();
+                    window.location.href = "/food-menu";
+                }
+            });
+        // });
+    }
+
     $(document).ready(function () {
         $(".img-btn").click(function () {
             const src = $(this).data("img-src");
