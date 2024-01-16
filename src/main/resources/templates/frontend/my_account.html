@@ -269,12 +269,11 @@
     });
 
     //     Cart Modal
-    window.cartList = null;
     window.totalOrderPrice = 0;
 
-    function renderCartItem(cartList) {
+    function renderCartItem(list) {
         const table = document.getElementById("table-id");
-        cartList.forEach((item, index) => {
+        list.forEach((item, index) => {
             let element = `<tr role="row" id="table-row-id">
                                 <th class="text-center" scope="row">${index + 1}</th>
                                 <td>
@@ -301,9 +300,8 @@
         url: "/api/cart/list",
         dataType: "json", // Specify JSON data type
         success: function (list) {
-            cartList = list;
             document.getElementById("cartItem").innerText = list.length;
-            renderCartItem(cartList);
+            renderCartItem(list);
         }
     });
 
@@ -311,10 +309,13 @@
         console.log(cart_id);
         $.ajax({
             type: "GET",
-            url: "/api/cart/remove/" + cartList,
+            url: "/api/cart/remove/" + cart_id,
             dataType: "json", // Specify JSON data type
             success: function (list) {
-                console.log(list);
+                document.getElementById("table-id").innerHTML = "";
+                totalOrderPrice = 0;
+                document.getElementById("cartItem").innerText = list.length;
+                renderCartItem(list);
             }
         });
     }
@@ -325,7 +326,6 @@
             url: "/api/order/make-order",
             dataType: "json", // Specify JSON data type
             success: function (list) {
-                console.log(list);
                 window.location.reload();
                 window.location.href = "/my-account";
             }

@@ -6,7 +6,7 @@ import com.hridoykrisna.Lazeez.repository.FoodMenuRepo;
 import com.hridoykrisna.Lazeez.service.FoodMenuService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
+import java.util.Optional;
 import java.util.List;
 
 @Service
@@ -25,5 +25,21 @@ public class FoodMenuIMPL implements FoodMenuService {
     public List<FoodMenu> getFoodMenuList() {
         System.out.println(foodMenuRepo.findAll());
         return foodMenuRepo.findAll();
+    }
+
+    @Override
+    public List<FoodMenu> getActiveFoodMenuList() {
+        return foodMenuRepo.findAllByStatus(1);
+    }
+
+    @Override
+    public int changeFoodStatus(int id, int status) {
+        Optional<FoodMenu> foodMenuOptional = foodMenuRepo.findById(id);
+        if (foodMenuOptional.isPresent()){
+            foodMenuOptional.get().setStatus(status);
+            foodMenuRepo.save(foodMenuOptional.get());
+            return 1;
+        }
+        return 0;
     }
 }

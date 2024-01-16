@@ -19,7 +19,7 @@ public class FoodMenuController {
     @GetMapping("/menu")
     public String getFoodMenu(Model model) {
         model.addAttribute("userAuthentic", CommonUtils.isUserAuthenticate);
-        model.addAttribute("foodMenuList", foodMenuService.getFoodMenuList());
+        model.addAttribute("foodMenuList", foodMenuService.getActiveFoodMenuList());
         return "frontend/menu.html";
     }
 

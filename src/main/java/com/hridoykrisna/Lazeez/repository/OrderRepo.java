@@ -16,4 +16,7 @@ public interface OrderRepo extends JpaRepository<Order, Integer> {
 
     @Query(value = "from Order where user_id=?1 order by createdAt desc")
     List<Order> getOrderListByCustomer(int id);
+
+    @Query(value = "select sum(total_price) from Order")
+    int sumOfTotalAmount();
 }
