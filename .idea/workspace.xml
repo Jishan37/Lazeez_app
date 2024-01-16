@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="Order Complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/FoodMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/FoodMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2WnlASRJewu0A6pWX5woYkJrtj9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowBuild.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/Spring/Lazeez/src/main/resources/templates/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1b4b48d6e27bbb7a3879c30acbca7c09&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hridoykrisna.car_management.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates\frontend" />
+      <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates" />
+      <recent name="D:\Java\Spring\Lazeez\src\main\resources\static\photos" />
+      <recent name="D:\Java\Spring\Lazeez\images" />
+      <recent name="D:\Java\Spring\Car Management\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates\frontend" />
+      <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates" />
+      <recent name="D:\Java\Spring\Car Management\src\main\resources\templates" />
+      <recent name="D:\Java\Spring\Car Management\src\main\resources\templates\fragment" />
+      <recent name="D:\Java\Spring\Car Management\src\main\resources\static\css\" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hridoykrisna.Lazeez.controller.Rest" />
+      <recent name="com.hridoykrisna.Lazeez.model" />
+      <recent name="com.hridoykrisna.Lazeez.controller" />
+      <recent name="com.hridoykrisna.car_management.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LazeezManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lazeez" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hridoykrisna.Lazeez.LazeezManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="" />
+      <created>1697376081312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697376081312</updated>
+      <workItem from="1697376082293" duration="1123000" />
+      <workItem from="1697377834816" duration="25661000" />
+      <workItem from="1697819369758" duration="8177000" />
+      <workItem from="1697898529455" duration="14754000" />
+      <workItem from="1697938989049" duration="2126000" />
+      <workItem from="1698053859353" duration="6121000" />
+      <workItem from="1698173416246" duration="12724000" />
+      <workItem from="1698245577646" duration="426000" />
+      <workItem from="1698248007141" duration="11433000" />
+      <workItem from="1698409385607" duration="17565000" />
+      <workItem from="1698582046033" duration="12689000" />
+      <workItem from="1698627915727" duration="23632000" />
+      <workItem from="1698758642708" duration="11650000" />
+      <workItem from="1698802012507" duration="4248000" />
+      <workItem from="1698843911500" duration="8502000" />
+      <workItem from="1699026509912" duration="208000" />
+      <workItem from="1699409685682" duration="573000" />
+      <workItem from="1699451942213" duration="1426000" />
+      <workItem from="1699462881640" duration="6871000" />
+      <workItem from="1699671460951" duration="403000" />
+      <workItem from="1699794852176" duration="2496000" />
+      <workItem from="1699923528913" duration="3862000" />
+      <workItem from="1699967101285" duration="12028000" />
+      <workItem from="1700224155186" duration="5029000" />
+      <workItem from="1700315827513" duration="2252000" />
+      <workItem from="1700401796862" duration="12749000" />
+      <workItem from="1700489011525" duration="9684000" />
+      <workItem from="1700568441624" duration="151000" />
+      <workItem from="1700570133735" duration="16811000" />
+      <workItem from="1700672099424" duration="596000" />
+      <workItem from="1700841184175" duration="2899000" />
+      <workItem from="1701099892648" duration="559000" />
+      <workItem from="1701103657794" duration="1238000" />
+      <workItem from="1701138211922" duration="729000" />
+      <workItem from="1701270401739" duration="1111000" />
+      <workItem from="1701273235025" duration="793000" />
+      <workItem from="1701525211437" duration="240000" />
+      <workItem from="1701699230392" duration="6376000" />
+      <workItem from="1701780277443" duration="2537000" />
+      <workItem from="1701786825228" duration="18000" />
+      <workItem from="1701882258950" duration="4571000" />
+      <workItem from="1701952061188" duration="581000" />
+      <workItem from="1701970027313" duration="14000" />
+      <workItem from="1702485563002" duration="7570000" />
+      <workItem from="1703014043274" duration="170000" />
+      <workItem from="1703220710157" duration="890000" />
+      <workItem from="1703482432271" duration="5323000" />
+      <workItem from="1704030680362" duration="10486000" />
+      <workItem from="1704118098513" duration="12705000" />
+      <workItem from="1704290460353" duration="6679000" />
+      <workItem from="1704424076969" duration="9421000" />
+      <workItem from="1704547757448" duration="7399000" />
+      <workItem from="1704636838554" duration="2314000" />
+      <workItem from="1704724778874" duration="941000" />
+      <workItem from="1704729185955" duration="1146000" />
+      <workItem from="1704734696853" duration="1125000" />
+      <workItem from="1704767456798" duration="15445000" />
+      <workItem from="1704892221459" duration="7740000" />
+      <workItem from="1705330821559" duration="3784000" />
+      <workItem from="1705418738833" duration="3733000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1698597622227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698597622227</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1698771451566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698771451566</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated with database mapping">
+      <option name="closed" value="true" />
+      <created>1699469812666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699469812666</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated with Driver Duty Time calculation">
+      <option name="closed" value="true" />
+      <created>1699981511293</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699981511293</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1700504080845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700504080845</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1700595080393</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700595080394</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1700595116824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700595116824</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1700595728976</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700595728976</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Happy New Year 2024">
+      <option name="closed" value="true" />
+      <created>1704051418506</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704051418506</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Happy New Year 2024">
+      <option name="closed" value="true" />
+      <created>1704292710466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704292710466</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Happy New Year 2024">
+      <option name="closed" value="true" />
+      <created>1704431401560</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704431401560</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Order Complete">
+      <option name="closed" value="true" />
+      <created>1704905892270</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704905892270</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated with database mapping" />
+    <MESSAGE value="Updated with Driver Duty Time calculation" />
+    <MESSAGE value="Updated" />
+    <MESSAGE value="Happy New Year- 2024" />
+    <MESSAGE value="Happy New Year 2024" />
+    <MESSAGE value="Order Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Complete" />
+  </component>
+</project>
