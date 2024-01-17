@@ -24,7 +24,7 @@ public class Dashboard {
     public String dashboard(Model model) {
         if (CommonUtils.isAdminAuthenticate) {
             model.addAttribute("currentUserName", CommonUtils.employee.getName());
-            long totalEmp = employeeRepo.count()-1;
+            long totalEmp = employeeRepo.count() - 1;
             int totalDriver = employeeRepo.getTotalDriver("DRIVER");
             model.addAttribute("totalEmployee", totalEmp);
             model.addAttribute("totalDriver", totalDriver);

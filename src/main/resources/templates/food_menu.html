@@ -59,8 +59,12 @@
                         <span th:if="${food.status == 0}">Inactive</span>
                     </td>
                     <td class="text-center">
-                        <button class="btn btn-warning status-btn" th:onclick="'foodStatus(' + ${food.id} + ', 0)'" th:if="${food.status == 1}">Close</button>
-                        <button class="btn btn-success status-btn" th:onclick="'foodStatus(' + ${food.id} + ', 1)'" th:if="${food.status == 0}">Open</button>
+                        <button class="btn btn-warning status-btn" th:if="${food.status == 1}"
+                                th:onclick="'foodStatus(' + ${food.id} + ', 0)'">Close
+                        </button>
+                        <button class="btn btn-success status-btn" th:if="${food.status == 0}"
+                                th:onclick="'foodStatus(' + ${food.id} + ', 1)'">Open
+                        </button>
                     </td>
                 </tr>
                 </tbody>
@@ -138,18 +142,18 @@
 <script th:src="@{/js/bootstrap.bundle.min.js}" type="text/javascript"></script>
 
 <script type="text/javascript">
-<!--    Food Status Change-->
+    <!--    Food Status Change-->
 
-    function foodStatus(food_id, status){
-            $.ajax({
-                type: "GET",
-                url: "/api/food-menu/status/" + food_id +"/"+ status,
-                dataType: "json", // Specify JSON data type
-                success: function (response) {
-                    window.location.reload();
-                    window.location.href = "/food-menu";
-                }
-            });
+    function foodStatus(food_id, status) {
+        $.ajax({
+            type: "GET",
+            url: "/api/food-menu/status/" + food_id + "/" + status,
+            dataType: "json", // Specify JSON data type
+            success: function (response) {
+                window.location.reload();
+                window.location.href = "/food-menu";
+            }
+        });
         // });
     }
 

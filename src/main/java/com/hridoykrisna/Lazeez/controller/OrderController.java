@@ -22,7 +22,7 @@ public class OrderController {
 
     @GetMapping({"/order/", "/order"})
     public String getOrder(Model model) {
-        if (CommonUtils.isAdminAuthenticate){
+        if (CommonUtils.isAdminAuthenticate) {
             List<Order> orderList = orderService.getAllOrder();
             model.addAttribute("orderList", orderList);
             model.addAttribute("currentUserName", CommonUtils.employee.getName());

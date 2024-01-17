@@ -360,7 +360,8 @@ marquee {
 #about-head abbr {
     color: yellow;
 }
-.table-black{
+
+.table-black {
     --bs-table-color: #fff;
     --bs-table-bg: #000000;
     --bs-table-border-color: #4d5154;

@@ -4,9 +4,7 @@ import com.hridoykrisna.Lazeez.Utils.CommonUtils;
 import com.hridoykrisna.Lazeez.model.CartItem;
 import com.hridoykrisna.Lazeez.model.Order;
 import com.hridoykrisna.Lazeez.repository.CartRepo;
-import com.hridoykrisna.Lazeez.service.CartService;
 import com.hridoykrisna.Lazeez.service.OrderService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +18,7 @@ public class OrderRestController {
     private final CartRepo cartRepo;
 
     @GetMapping("make-order")
-    public Order makeOrder(){
+    public Order makeOrder() {
         List<CartItem> cartItemList = cartRepo.getCartListAndStatusOne(CommonUtils.customer.id);
         return orderService.makeOrder(cartItemList);
     }

@@ -7,23 +7,23 @@ import com.hridoykrisna.Lazeez.repository.CartRepo;
 import com.hridoykrisna.Lazeez.repository.FoodMenuRepo;
 import com.hridoykrisna.Lazeez.service.CartService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Optional;
 import java.util.List;
-
-import org.springframework.stereotype.Service;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class CartServiceIMPL implements CartService {
     private final FoodMenuRepo foodMenuRepo;
     private final CartRepo cartRepo;
+
     @Override
     public List<CartItem> addToCart(int id) {
         Optional<FoodMenu> foodMenu = foodMenuRepo.findById(id);
         List<CartItem> cartItems = new ArrayList<>();
-        if (foodMenu.isPresent()){
+        if (foodMenu.isPresent()) {
             CartItem cartItem = new CartItem();
             cartItem.setFood_id(id);
             cartItem.setName(foodMenu.get().getName());

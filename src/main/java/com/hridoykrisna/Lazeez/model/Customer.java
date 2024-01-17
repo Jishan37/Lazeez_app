@@ -1,6 +1,5 @@
 package com.hridoykrisna.Lazeez.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
@@ -17,7 +16,7 @@ import java.security.NoSuchAlgorithmException;
 @Table(name = "customer")
 public class Customer extends BaseModel {
     private String name;
-//    @Column(unique = true)
+    //    @Column(unique = true)
     private String email;
     private String password;
     private String address;

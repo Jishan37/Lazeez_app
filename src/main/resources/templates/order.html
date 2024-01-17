@@ -44,7 +44,7 @@
                                 <th class="align-middle">Food Name</th>
                                 <th class="align-middle">Unit Price</th>
                             </tr>
-                            <tr th:each="food : ${order.foodMenuList}" role="row">
+                            <tr role="row" th:each="food : ${order.foodMenuList}">
                                 <td class="text-center" th:text="${food.name}"></td>
                                 <td class="text-center" th:text="${food.price}"></td>
                             </tr>
@@ -64,10 +64,11 @@
                     </td>
                     <td class="text-center">
                         <span th:if="${order.status == 0}">
-                            <button th:onclick="'updateOrder(' + ${order.id} + ', 1)'" class="btn btn-warning">Processing</button>
+                            <button class="btn btn-warning" th:onclick="'updateOrder(' + ${order.id} + ', 1)'">Processing</button>
                         </span>
                         <span th:if="${order.status == 1}">
-                            <button th:onclick="'updateOrder(' + ${order.id} + ', 2)'" class="btn btn-warning">On Way</button>
+                            <button class="btn btn-warning"
+                                    th:onclick="'updateOrder(' + ${order.id} + ', 2)'">On Way</button>
                         </span>
                         <span th:if="${order.status == 2}">
                             Wait for Delivery
@@ -157,7 +158,7 @@
         $.ajax({
             type: "POST",
             url: "/api/order/update-status",
-            data: { id: id, status: status },
+            data: {id: id, status: status},
             success: function (result) {
                 console.log(result);
                 window.location.replace("/order");

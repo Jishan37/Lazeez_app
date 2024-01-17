@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
@@ -14,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @ToString
-@Table( name = "order_table")
+@Table(name = "order_table")
 public class Order extends BaseModel {
     @ManyToOne
     @JoinColumn(name = "customer_id")

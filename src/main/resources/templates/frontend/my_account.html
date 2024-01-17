@@ -18,7 +18,8 @@
         <a class="navbar-brand" href="/">
             <img class="rounded mx-5 " th:src="@{/photos/logo.jpeg}" width="80px">
         </a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
                 data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +38,7 @@
             <div class="">
                 <ul class="navbar-nav m-auto bg-radius-shape mb-2 mb-lg-0 justify-content-center fw-semibold">
                     <li class="nav-item">
-                        <div class="nav-link-2 cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <div class="nav-link-2 cart" data-bs-target="#cartModal" data-bs-toggle="modal">
                             <img th:src="@{/photos/cart.svg}" width="30px">
                             <span id="cartItem"></span>
                         </div>
@@ -92,7 +93,7 @@
                                 <th class="align-middle">Food Name</th>
                                 <th class="align-middle">Unit Price</th>
                             </tr>
-                            <tr th:each="food : ${order.foodMenuList}" role="row">
+                            <tr role="row" th:each="food : ${order.foodMenuList}">
                                 <td class="text-center" th:text="${food.name}"></td>
                                 <td class="text-center" th:text="${food.price}"></td>
                             </tr>
@@ -118,7 +119,7 @@
                             Processing
                         </span>
                         <span th:if="${order.status == 2}">
-                            <button th:onclick="'updateOrder(' + ${order.id} + ', 3)'" class="btn btn-warning">Pay & Received</button>
+                            <button class="btn btn-warning" th:onclick="'updateOrder(' + ${order.id} + ', 3)'">Pay & Received</button>
                         </span>
                         <span th:if="${order.status == 3}">
                             Complete
@@ -194,12 +195,12 @@
 </a>
 
 <!-- Modal -->
-<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="imageModalLabel" class="modal fade" id="cartModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-top">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fw-bold fs-5" id="imageModalLabel">Cart Item</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body p-0">
                 <div id="cart-item-id">
@@ -241,7 +242,7 @@
         $.ajax({
             type: "POST",
             url: "/api/order/update-status",
-            data: { id: id, status: status },
+            data: {id: id, status: status},
             success: function (result) {
                 console.log(result);
                 window.location.replace("/my-account");
@@ -252,6 +253,7 @@
             }
         });
     }
+
     $(document).ready(function () {
         $(".cart-btn").click(function () {
             const food_id = $(this).data("food-id");
@@ -292,7 +294,7 @@
             totalOrderPrice = totalOrderPrice + item.total_price;
 
         });
-        document.getElementById("total-order-id").innerHTML = "Total Order Price= "+ totalOrderPrice + " BDT Only.";
+        document.getElementById("total-order-id").innerHTML = "Total Order Price= " + totalOrderPrice + " BDT Only.";
     }
 
     $.ajax({
@@ -320,7 +322,7 @@
         });
     }
 
-    function submitOrder(){
+    function submitOrder() {
         $.ajax({
             type: "GET",
             url: "/api/order/make-order",

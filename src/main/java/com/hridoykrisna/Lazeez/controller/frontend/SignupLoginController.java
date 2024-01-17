@@ -46,8 +46,9 @@ public class SignupLoginController {
             return "redirect:/login-customer";
         }
     }
+
     @GetMapping("/customer-logout")
-    public String logOut(){
+    public String logOut() {
         CommonUtils.isUserAuthenticate = false;
         CommonUtils.customer = null;
         return "redirect:/";

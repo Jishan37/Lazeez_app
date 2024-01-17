@@ -1,7 +1,7 @@
 package com.hridoykrisna.Lazeez.Utils;
 
-import com.hridoykrisna.Lazeez.model.Employee;
 import com.hridoykrisna.Lazeez.model.Customer;
+import com.hridoykrisna.Lazeez.model.Employee;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

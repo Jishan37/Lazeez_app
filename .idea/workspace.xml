@@ -5,22 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="Order Complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/Utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/Utils/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/FoodMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/FoodMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/MyAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/MyAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/CartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/employee.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +210,8 @@
       <workItem from="1704767456798" duration="15445000" />
       <workItem from="1704892221459" duration="7740000" />
       <workItem from="1705330821559" duration="3784000" />
-      <workItem from="1705418738833" duration="3733000" />
+      <workItem from="1705418738833" duration="3895000" />
+      <workItem from="1705499339307" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <option name="closed" value="true" />
@@ -292,7 +309,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704905892270</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Order Complete">
+      <option name="closed" value="true" />
+      <created>1705422620020</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422620021</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Order Complete">
+      <option name="closed" value="true" />
+      <created>1705422668172</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422668172</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Order Complete">
+      <option name="closed" value="true" />
+      <created>1705422680376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422680376</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

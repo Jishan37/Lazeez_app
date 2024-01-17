@@ -2,18 +2,17 @@ package com.hridoykrisna.Lazeez.service.impl;
 
 import com.hridoykrisna.Lazeez.Utils.CommonUtils;
 import com.hridoykrisna.Lazeez.model.CartItem;
+import com.hridoykrisna.Lazeez.model.Customer;
 import com.hridoykrisna.Lazeez.model.FoodMenu;
 import com.hridoykrisna.Lazeez.model.Order;
-import com.hridoykrisna.Lazeez.model.Customer;
 import com.hridoykrisna.Lazeez.repository.CartRepo;
 import com.hridoykrisna.Lazeez.repository.OrderRepo;
 import com.hridoykrisna.Lazeez.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,7 +29,7 @@ public class OrderServiceIMPL implements OrderService {
         float totalPrice = 0;
         int totalQuantity = 0;
 
-        for(CartItem item : cartItemList){
+        for (CartItem item : cartItemList) {
             FoodMenu foodMenu = new FoodMenu();
             foodMenu.setId(item.getFood_id());
             foodMenuList.add(foodMenu);
@@ -63,8 +62,8 @@ public class OrderServiceIMPL implements OrderService {
     @Override
     public String updateStatus(int id, int status) {
         Optional<Order> orderOptional = orderRepo.findById(id);
-        if (orderOptional.isPresent()){
-            if (status==3)
+        if (orderOptional.isPresent()) {
+            if (status == 3)
                 orderOptional.get().setPayment_status(1);
             orderOptional.get().setStatus(status);
             orderRepo.save(orderOptional.get());
