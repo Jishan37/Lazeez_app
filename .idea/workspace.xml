@@ -4,38 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="Order Complete">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/photos/disable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/photos/info.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="All Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/LazeezManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/LazeezManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/EmployeeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/EmployeeRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/CartItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/food_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/food_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/repository/EmployeeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/repository/EmployeeRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/my_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/my_account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705422680376</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="All Complete">
+      <option name="closed" value="true" />
+      <created>1706094239939</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706094239940</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +348,7 @@
     <MESSAGE value="Happy New Year- 2024" />
     <MESSAGE value="Happy New Year 2024" />
     <MESSAGE value="Order Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Order Complete" />
+    <MESSAGE value="All Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="All Complete" />
   </component>
 </project>
