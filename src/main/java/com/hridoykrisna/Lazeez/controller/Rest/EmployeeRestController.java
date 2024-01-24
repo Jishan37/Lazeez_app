@@ -7,10 +7,7 @@ import com.hridoykrisna.Lazeez.service.util.FileService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -27,6 +24,13 @@ public class EmployeeRestController {
         //        System.out.println(employee);
 //        model.addAttribute("employee", employee);
         return employeeService.getEmployeeById(id);
+    }
+
+    @PostMapping("disable")
+    public Employee disableEmployee(@RequestParam("id") int id) {
+        //        System.out.println(employee);
+//        model.addAttribute("employee", employee);
+        return employeeService.disableEmployee(id);
     }
 
 }

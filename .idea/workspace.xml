@@ -5,38 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a40e1c9-3216-47d3-ac4c-b8c205517bb8" name="Changes" comment="Order Complete">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/photos/disable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/photos/info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/Utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/Utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/FoodMenuRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/MyAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/MyAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/FoodMenuRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/OrderRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/FoodMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/LazeezManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/LazeezManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/controller/Rest/EmployeeRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/EmployeeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/repository/EmployeeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hridoykrisna/Lazeez/service/impl/EmployeeServiceIMPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/food_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/my_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/frontend/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/Rest/OrderRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/controller/frontend/SignupLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/CartServiceIMPL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/FoodMenuIMPL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hridoykrisna/Lazeez/service/impl/OrderServiceIMPL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/food_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/food_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/my_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/my_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/frontend/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/frontend/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="Lazeez/invalid/JPA" />
+    </ignored-facets>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -65,7 +69,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -83,41 +86,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowBuild.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/Spring/Lazeez/src/main/resources/templates/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;1b4b48d6e27bbb7a3879c30acbca7c09&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LazeezManagementApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/IdeaProjects/Lazeez/src/main/resources/static/photos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "spring.configuration.checksum": "1b4b48d6e27bbb7a3879c30acbca7c09",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.hridoykrisna.car_management.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\IdeaProjects\Lazeez\src\main\resources\static\photos" />
       <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates\frontend" />
       <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates" />
       <recent name="D:\Java\Spring\Lazeez\src\main\resources\static\photos" />
       <recent name="D:\Java\Spring\Lazeez\images" />
-      <recent name="D:\Java\Spring\Car Management\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\Spring\Lazeez\src\main\resources\templates\frontend" />
@@ -142,6 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

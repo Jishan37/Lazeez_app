@@ -30,19 +30,26 @@
         <div class="row p-2 m-0 ">
             <tr th:each="employee : ${employees}">
                 <div class="col-md-3 p-2">
-                    <div class="card dashboard-bg text-white">
-                        <img class="card-img-top" height="200px" th:alt="${employee.name}" th:src="${employee.imagePath}"
+                    <div  th:classappend="${employee.isActive}? dashboard-bg : bg-dark" class="card text-white">
+                        <img class="card-img-top" height="200px" th:alt="${employee.name}"
+                             th:src="${employee.imagePath}"
                              width="100%">
                         <div class="card-body">
-                            <h6 class="card-title fw-bold d-flex justify-content-center"><span
-                                    th:text="${employee.name}"> Title </span></h6>
+                            <h6 class="card-title fw-bold d-flex justify-content-center">
+                                <span th:if="${employee.isActive}" th:text="${employee.name}"></span>
+                                <span th:unless="${employee.isActive}" th:text="${employee.name} +' (Inactive) '"></span>
+                            </h6>
                             <h6 class="card-title d-flex justify-content-center"><span
                                     th:text="${employee.designation}"> Title </span></h6>
                             <div class="text-center">
-                                <button class="btn btn-warning details-button"
+                                <button class="btn btn-light details-button"
                                         data-bs-target="#empDetailsModel" data-bs-toggle="modal"
                                         th:attr="data-employee-id=${employee.id}">
-                                    Details
+                                    <img height="20px" th:src="@{photos/info.png}">
+                                </button>
+                                <button th:if="${employee.isActive}" class="btn btn-light details-button">
+                                    <img th:onclick="'disableEMP(' + ${employee.id} + ')'" height="20px"
+                                         th:src="@{photos/disable.png}">
                                 </button>
                             </div>
                         </div>
@@ -246,6 +253,23 @@
             });
         });
     });
+
+    function disableEMP(empId){
+        console.log(empId);
+        $.ajax({
+            type: "POST",
+            url: "/api/employee/disable",
+            data: {id: empId},
+            success: function (result) {
+                console.log(result);
+                window.location.replace("/employee");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error("AJAX error:", textStatus, errorThrown);
+                // Handle error appropriately (e.g., display error message)
+            }
+        });
+    }
 </script>
 </body>
 </html>

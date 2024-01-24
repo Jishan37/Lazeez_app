@@ -12,7 +12,8 @@ import java.util.Optional;
 @Repository
 public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
-    List<Employee> findAllByIsActiveTrue();
+    @Query(value = "from Employee where nid IS NOT NULL order by isActive desc")
+    List<Employee> findAllEmployee();
 
     @Query(value = "from Employee where email=?1 And password=?2")
     Optional<Employee> findByEmailAndPassword(String email, String password);

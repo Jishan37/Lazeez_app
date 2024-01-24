@@ -11,5 +11,7 @@ public interface EmployeeService {
 
     Employee getEmployeeById(int id);
 
+    Employee disableEmployee(int id);
+
     List<Employee> driverList();
 }

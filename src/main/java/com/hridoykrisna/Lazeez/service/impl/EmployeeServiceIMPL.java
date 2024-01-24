@@ -17,7 +17,7 @@ public class EmployeeServiceIMPL implements EmployeeService {
 
     @Override
     public List<Employee> employeeList() {
-        return employeeRepo.findAllByIsActiveTrue();
+        return employeeRepo.findAllEmployee();
     }
 
     @Override
@@ -30,6 +30,17 @@ public class EmployeeServiceIMPL implements EmployeeService {
     public Employee getEmployeeById(int id) {
         Optional<Employee> employee = employeeRepo.findById(id);
         return employee.orElse(null);
+    }
+
+    @Override
+    public Employee disableEmployee(int id) {
+        Optional<Employee> employee = employeeRepo.findById(id);
+        if (employee.isPresent()){
+            employee.get().setIsActive(false);
+            employeeRepo.save(employee.get());
+            return employee.get();
+        }
+        return null;
     }
 
     @Override
